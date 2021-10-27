@@ -50,7 +50,7 @@ const App = () => {
         <>
             <div className="h-screen overflow-hidden bg-gray-800">
                 <Navbar handleSearch={handleSearch} showRegisterModal={() => setShowRegisterModal(true)}/>
-                <div className="flex h-screen overflow-y-auto">
+                <div className="flex h-screen overflow-y-auto -mt-16 pt-16">
                     {currentMovie.hasOwnProperty('movieId') ?
                         <MovieDetails showRegisterModal={() => setShowRegisterModal(true)} user={user} setCurrentMovie={setCurrentMovie} movie={currentMovie}/> :
                         <>{data.length > 0 && <MovieList setCurrentMovie={setCurrentMovie} movies={data}/>}</>

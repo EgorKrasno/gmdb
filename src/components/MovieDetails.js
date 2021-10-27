@@ -31,7 +31,7 @@ const MovieDetails = ({movie, setCurrentMovie, user, showRegisterModal}) => {
     }, []);
 
     return (
-        <div className="flex m-2 text-gray-100 overflow-hidden">
+        <div className="flex m-2 text-gray-100">
             <div className="flex flex-col">
                 <div onClick={() => setCurrentMovie({})}
                      className="text-gray-100 hover:text-yellow-400 cursor-pointer w-16"><IoArrowBackCircleOutline
@@ -50,7 +50,7 @@ const MovieDetails = ({movie, setCurrentMovie, user, showRegisterModal}) => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col w-1/2 h-full mt-4 mx-3">
+            <div className="flex flex-col w-1/2 mt-5 mx-3">
                 <form
                     onSubmit={async (event) => {
                         event.preventDefault();
